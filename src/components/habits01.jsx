@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Habit from "./habit";
+import Habit01 from "./habit01";
 
-class Habits extends Component {
+class Habits01 extends Component {
   state = {
     habits: [
       { id: 1, name: "Coding", count: 0 },
@@ -35,7 +35,7 @@ class Habits extends Component {
     return (
       <ul>
         {this.state.habits.map((habit) => (
-          <Habit
+          <Habit01
             key={habit.id}
             habit={habit}
             onIncrement={this.handleIncrement}
@@ -48,4 +48,4 @@ class Habits extends Component {
   }
 }
 
-export default Habits;
+export default Habits01;
